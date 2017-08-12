@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.xiaoming.slience">
+    <!-- Bomb 权限-->
+    <!--允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--获取GSM（2g）、WCDMA（联通3g）等网络状态的信息  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--获取sd卡写的权限，用于文件上传和下载-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许读取手机状态 用于创建BmobInstallation-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 其他权限 短信 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+    <!-- 友盟SDK权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:allowBackup="true"
+        android:name=".global.Global_Application"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="UMENG_APPKEY" android:value="594c97e407fe65469c000798" />
+          
+        <activity android:name=".activity.SplashActivity" android:theme="@style/AppTheme.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activity.HotLeftDetailActivity" android:theme="@style/Theme.AppCompat.Light.SwipeBackTheme"/>
+        <activity android:name=".activity.CreateCollectionsActivity" android:theme="@style/Theme.AppCompat.Light.SwipeBackTheme"/>
+        <activity android:name=".activity.EditCollectionsActivity" android:theme="@style/Theme.AppCompat.Light.SwipeBackTheme"/>
+        <activity android:name=".activity.PhotoDetailActivity"/>
+        <activity android:name=".activity.CollectionActivity" android:theme="@style/Theme.AppCompat.Light.SwipeBackTheme"/>
+        <activity android:name=".activity.CollectionsActivity" android:theme="@style/Theme.AppCompat.Light.SwipeBackTheme"/>
+        <activity android:name=".activity.TabSelectActivity" android:theme="@style/Theme.AppCompat.Light.SwipeBackTheme"/>
+        <activity android:name=".activity.UserDetailsActivity" android:theme="@style/Theme.AppCompat.Light.SwipeBackTheme"/>
+        <activity android:name=".activity.LoginActivity" android:theme="@style/Theme.AppCompat.Light.SwipeBackTheme"/>
+        <activity android:name=".activity.RegisterActivity" android:theme="@style/Theme.AppCompat.Light.SwipeBackTheme"/>
+        <activity android:name=".activity.FindPwActivity" android:theme="@style/Theme.AppCompat.Light.SwipeBackTheme"/>
+        <activity android:name=".activity.LikesActivity" android:theme="@style/Theme.AppCompat.Light.SwipeBackTheme"/>
+        <activity android:name=".activity.WatchActivity" android:theme="@style/Theme.AppCompat.Light.SwipeBackTheme"/>
+        <!--新浪分享-->
+        <activity
+            android:name=".activity.wbshare.WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--微信分享-->
+        <activity
+            android:name=".activity.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--支付宝分享-->
+        <activity
+            android:name=".activity.apshare.ShareEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--QQ 精简版分享-->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+    </application>
+
+</manifest>

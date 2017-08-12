@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_half">#50000000</color>
+    <color name="cw_black">#000000</color>
+    <color name="cw_black_1">#281d1d</color>
+    <color name="cw_white">#ffffff</color>
+    <color name="cw_white_900">#baffffff</color>
+    <color name="cw_white_100">#F2F2F7</color>
+    <color name="cw_bg_900">#263238</color>
+    <color name="cw_grey">#9e9e9e</color>
+    <color name="cw_green">#009688</color>
+    <color name="cw_yellow">#ffab00</color>
+    <color name="cw_blue">#576b95</color>
+    <color name="cw_blue_500">#5677fc</color>
+    <color name="cw_black_deep">#2d3841</color>
+    <color name="cw_red">#b70b30</color>
+    <color name="cw_bg">#dfe5ea</color>
+    <color name="cw_bg1">#d4e4f4</color>
+    <color name="cw_bg3">#F5F6F7</color>
+    <color name="cw_bg2">#c0b4bec9</color>
+    <color name="cw_font">#484849</color>
+    <color name="cw_tab">#EEEDEF</color>
+    <color name="cw_btn">#34d6dbe1</color>
+    <color name="cw_btn1">#05d6dbe1</color>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_collections_share"
+          android:icon="@mipmap/ic_player_share"
+          app:showAsAction="always"
+          android:orderInCategory="100"
+          android:title="收藏集分享"/>
+    <item android:id="@+id/action_collections_delete"
+          app:showAsAction="never"
+          android:orderInCategory="101"
+          android:title="删除分享集"/>
+</menu>

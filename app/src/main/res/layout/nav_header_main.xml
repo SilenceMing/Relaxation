@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@mipmap/nav_header"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_topImg"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:src="@mipmap/ic_user_default"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        app:civ_border_width="3dp"
+        app:civ_border_color="@color/cw_grey"/>
+
+    <TextView
+        android:id="@+id/tv_topName"
+        android:layout_below="@id/iv_topImg"
+        android:layout_marginTop="10dp"
+        android:text="slience"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_topDes"
+        android:layout_below="@id/tv_topName"
+        android:layout_marginTop="10dp"
+        android:text="新浪微博授权登录"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

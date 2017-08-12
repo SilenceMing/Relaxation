@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.xiaoming.slience"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    /*增加Umeng签名文件的密码*/
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+    /*针对greenDao的一些配置*/
+    greendao {
+        schemaVersion 1 //数据库版本号
+        daoPackage 'com.xiaoming.slience.greendao.gen' //自动生成的工具类的包名
+        targetGenDir 'src/main/java' //路径
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'org.xutils:xutils:3.5.0'
+    compile 'com.github.vajro:MaterialDesignLibrary:1.6'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.r0adkll:slidableactivity:2.0.5'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.commit451:PhotoView:1.2.4'
+    compile 'org.jsoup:jsoup:1.10.3'
+    compile project(':nicevideoplayer')
+    compile 'com.just.agentweb:agentweb:1.2.1'
+    compile 'com.arialyy.aria:aria-core:3.1.8'
+    annotationProcessor 'com.arialyy.aria:aria-compiler:3.1.8'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'jp.wasabeef:recyclerview-animators:2.2.6'
+    compile project(':SwipeBacklibrary')
+    compile 'cn.bmob.android:http-legacy:1.0'
+    compile 'cn.bmob.android:bmob-sdk:3.5.5'
+    compile 'cn.bmob.android:bmob-sms:1.0.1'
+    compile 'cn.finalteam:galleryfinal:1.4.8.7'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'org.greenrobot:greendao:3.2.2'
+    compile 'de.hdodenhof:circleimageview:2.1.0@aar'
+}

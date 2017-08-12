@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">闲读</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="activity_createCollections">新建收藏集</string>
+    <string name="menu_create">创建</string>
+    <string name="collection_name">名称</string>
+    <string name="collection_name_hint">20字以内，不支持空格和特殊字符</string>
+    <string name="eventBus_createFinish">createFinish</string>
+    <string name="createCollection">创建收藏</string>
+    <string name="Collections">Collections</string>
+    <string name="edit_Collections">Edit_Collections</string>
+    <string name="menu_edit">保存</string>
+    <string name="updateFinish">Update_Finish</string>
+    <string name="CollectionsPosition">CollectionsPosition</string>
+    <string name="CollectionActivity_Action">CollectionActivity_Action</string>
+    <string name="CollectionActivity_Collection">CollectionActivity_Url</string>
+    <string name="Post_Positions">POSTS_POSITIONS</string>
+    <string name="Posts">POSTS</string>
+    <string name="HotLeftPager_Action">HotLeftPager</string>
+    <string name="Title_TabSelect">页面标签</string>
+    <string name="IsFirstInto">IsFirstInto</string>
+    <string name="First">FIRST</string>
+    <string name="TabSelect_UpdataFinish">updateFinish</string>
+    <string name="activity_settings_user">头像</string>
+    <string name="activity_settings_username">用户名</string>
+    <string name="activity_settings_des">简介</string>
+    <string name="RegisterPhone">register_phone</string>
+    <string name="SPUserClass">SPUserClass</string>
+    <string name="UserDetail_UpdateFinish">UserDetail_UpdateFinish</string>
+    <string name="EventBus_UserDetailFinish">EventBus_UserDetailFinish</string>
+    <string name="EventBus_OutLogin">EventBus_outLogin</string>
+    <string name="WatchActivity_Action">WatchActivity_Action</string>
+    <string name="ReadsClass">ReadsClass</string>
+    <string name="LikesActivity_Action">LikesActivity_Action</string>
+    <string name="LikesClass">LikesClass</string>
+</resources>
