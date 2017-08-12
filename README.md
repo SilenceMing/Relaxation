@@ -1,2 +1,2 @@
-# SlidingMenu
-结合Android自身的侧滑实现点击不同的菜单到不同的页面
+# Relaxation Reading
+一款集阅读，图集，音乐，视频于一体，以bmob为后端云数据的阅读器
